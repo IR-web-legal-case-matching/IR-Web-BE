@@ -18,7 +18,7 @@ from django.urls import include, path
 from IRwebBE.quickstart import views
 
 urlpatterns = [
-    path('api/process_text/', views.ProcessTextView.as_view(), name='process_text'),
+    path('api/process_text', views.ProcessTextView.as_view(), name='process_text'),
 ]         
 
 '''
