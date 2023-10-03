@@ -15,10 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import include, path
-from IRwebBE.quickstart import views
+from IRwebBE.API import views
 
 urlpatterns = [
     path('api/process_text', views.ProcessTextView.as_view(), name='process_text'),
+    path('api/model_output', views.ModelOutputView.as_view(), name='model_output'),
 ]         
 
 '''

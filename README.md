@@ -18,4 +18,14 @@ Expected data format: `{'input_text': 'this is the data sent'}`
 
 Return data format: `{'processed_text': 'this is the data returned'}`
 
-Function: to uppercase (for example)
+Function: to uppercase 
+
+- `/api/model_output`
+
+Using method: `HTTP_POST`
+
+Expected data format: `{'query': 'this is the data sent'}`
+
+Return data format: `{'result': 'this is the data returned'}`
+
+Function: to get the model output
